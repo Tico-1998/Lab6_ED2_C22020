@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Cifrado_llave_publica/1.0.0": {
+        "runtime": {
+          "Cifrado_llave_publica.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Cifrado_llave_publica/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
