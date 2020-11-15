@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Cifrado_llave_publica
 {
-    class RSA
+    public class RSA
     {
         private byte[] bufferescritura;
         private byte[] bufferlectura;

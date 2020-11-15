@@ -4,6 +4,6 @@ C:\Users\voca9\Desktop\Cifrado_llave_publica\Cifrado_llave_publica\bin\Debug\net
 C:\Users\voca9\Desktop\Cifrado_llave_publica\Cifrado_llave_publica\obj\Debug\netcoreapp3.1\Cifrado_llave_publica.csprojAssemblyReference.cache
 C:\Users\voca9\Desktop\Cifrado_llave_publica\Cifrado_llave_publica\obj\Debug\netcoreapp3.1\Cifrado_llave_publica.AssemblyInfoInputs.cache
 C:\Users\voca9\Desktop\Cifrado_llave_publica\Cifrado_llave_publica\obj\Debug\netcoreapp3.1\Cifrado_llave_publica.AssemblyInfo.cs
-C:\Users\voca9\Desktop\Cifrado_llave_publica\Cifrado_llave_publica\obj\Debug\netcoreapp3.1\Cifrado_llave_publica.csproj.CoreCompileInputs.cache
 C:\Users\voca9\Desktop\Cifrado_llave_publica\Cifrado_llave_publica\obj\Debug\netcoreapp3.1\Cifrado_llave_publica.dll
 C:\Users\voca9\Desktop\Cifrado_llave_publica\Cifrado_llave_publica\obj\Debug\netcoreapp3.1\Cifrado_llave_publica.pdb
+C:\Users\voca9\Desktop\Cifrado_llave_publica\Cifrado_llave_publica\obj\Debug\netcoreapp3.1\Cifrado_llave_publica.csproj.CoreCompileInputs.cache
