@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\voca9\\Desktop\\Cifrado_llave_publica\\Consola\\Consola.csproj": {}
+    "C:\\Users\\voca9\\Desktop\\RSA\\Cifrado_llave_publica\\Consola\\Consola.csproj": {}
   },
   "projects": {
-    "C:\\Users\\voca9\\Desktop\\Cifrado_llave_publica\\Cifrado_llave_publica\\Cifrado_llave_publica.csproj": {
+    "C:\\Users\\voca9\\Desktop\\RSA\\Cifrado_llave_publica\\Cifrado_llave_publica\\Cifrado_llave_publica.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\voca9\\Desktop\\Cifrado_llave_publica\\Cifrado_llave_publica\\Cifrado_llave_publica.csproj",
+        "projectUniqueName": "C:\\Users\\voca9\\Desktop\\RSA\\Cifrado_llave_publica\\Cifrado_llave_publica\\Cifrado_llave_publica.csproj",
         "projectName": "Cifrado_llave_publica",
-        "projectPath": "C:\\Users\\voca9\\Desktop\\Cifrado_llave_publica\\Cifrado_llave_publica\\Cifrado_llave_publica.csproj",
+        "projectPath": "C:\\Users\\voca9\\Desktop\\RSA\\Cifrado_llave_publica\\Cifrado_llave_publica\\Cifrado_llave_publica.csproj",
         "packagesPath": "C:\\Users\\voca9\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\voca9\\Desktop\\Cifrado_llave_publica\\Cifrado_llave_publica\\obj\\",
+        "outputPath": "C:\\Users\\voca9\\Desktop\\RSA\\Cifrado_llave_publica\\Cifrado_llave_publica\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -66,14 +66,14 @@
         }
       }
     },
-    "C:\\Users\\voca9\\Desktop\\Cifrado_llave_publica\\Consola\\Consola.csproj": {
+    "C:\\Users\\voca9\\Desktop\\RSA\\Cifrado_llave_publica\\Consola\\Consola.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\voca9\\Desktop\\Cifrado_llave_publica\\Consola\\Consola.csproj",
+        "projectUniqueName": "C:\\Users\\voca9\\Desktop\\RSA\\Cifrado_llave_publica\\Consola\\Consola.csproj",
         "projectName": "Consola",
-        "projectPath": "C:\\Users\\voca9\\Desktop\\Cifrado_llave_publica\\Consola\\Consola.csproj",
+        "projectPath": "C:\\Users\\voca9\\Desktop\\RSA\\Cifrado_llave_publica\\Consola\\Consola.csproj",
         "packagesPath": "C:\\Users\\voca9\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\voca9\\Desktop\\Cifrado_llave_publica\\Consola\\obj\\",
+        "outputPath": "C:\\Users\\voca9\\Desktop\\RSA\\Cifrado_llave_publica\\Consola\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -93,8 +93,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\voca9\\Desktop\\Cifrado_llave_publica\\Cifrado_llave_publica\\Cifrado_llave_publica.csproj": {
-                "projectPath": "C:\\Users\\voca9\\Desktop\\Cifrado_llave_publica\\Cifrado_llave_publica\\Cifrado_llave_publica.csproj"
+              "C:\\Users\\voca9\\Desktop\\RSA\\Cifrado_llave_publica\\Cifrado_llave_publica\\Cifrado_llave_publica.csproj": {
+                "projectPath": "C:\\Users\\voca9\\Desktop\\RSA\\Cifrado_llave_publica\\Cifrado_llave_publica\\Cifrado_llave_publica.csproj"
               }
             }
           }

@@ -1,15 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Numerics;
 using System.Text;
 
 namespace Cifrado_llave_publica
 {
     public class RSA
-    {
-        private byte[] bufferescritura;
-        private byte[] bufferlectura;
-        private int largobuffer = 150;
+    {                
+        private int largobuffer = 150;        
         private int posicionbuffer;
         private string rutaarchivo;
         private string rutaserver;
@@ -24,30 +23,33 @@ namespace Cifrado_llave_publica
         }
         public void cifrarodescifrar(int n, int e)
         {
-            using(var file=new FileStream(rutaarchivo,FileMode.Open))
+            var buffer = new char[largobuffer];
+            var bufferescritura = new char[largobuffer];
+            using (var file=new FileStream(rutaarchivo,FileMode.Open))
             {
-                using (var reader = new BinaryReader(file))
+                using (var reader = new StreamReader(file))
                 {
                     while (reader.BaseStream.Position!=reader.BaseStream.Length)
-                    {
-                        bufferescritura = new byte[largobuffer];
-                        bufferlectura = new byte[largobuffer];
-                        bufferlectura = reader.ReadBytes(largobuffer);
+                    {                        
+                        reader.Read(buffer,0,largobuffer);
                         posicionbuffer = 0;
-                        for (int i = 0; i < bufferlectura.Length; i++)
+                        foreach (var caracter in buffer)
                         {
-                            bufferescritura[i] = Convert.ToByte(Math.Pow(bufferlectura[i], e) % n);
+                            var caracterByte = (int)caracter;
+                            var caractercifrado = BigInteger.ModPow(caracter, e, n);
+                            bufferescritura[posicionbuffer] = (char)caractercifrado;
+                            posicionbuffer++;
                         }
-                        Escribir();
+                        Escribir(bufferescritura);
                     }
                 }
             }
         }
-        private void Escribir()
+        private void Escribir(char [] bufferescritura) 
         {
             using (var file = new FileStream(rutaserver + nombre, FileMode.Append))
             {
-                using (var writer = new BinaryWriter(file))
+                using (var writer = new StreamWriter(file))
                 {
                     for (int i = 0; i < bufferescritura.Length; i++)
                     {
