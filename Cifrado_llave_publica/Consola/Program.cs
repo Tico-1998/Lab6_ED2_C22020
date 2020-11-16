@@ -8,9 +8,8 @@ namespace Consola
         static void Main(string[] args)
         {
             string path = Console.ReadLine();            
-            string nombre = "prueba0";
-            RSA rsa = new RSA(nombre,path,path);
-            rsa.cifrarodescifrar(3233, 2753);
+            RSA rsa = new RSA(path,path);
+            rsa.cifrarodescifrar(3233, 2753,".txt", "intento");
 
         }
     }

@@ -9,7 +9,7 @@ namespace Cifrado_llave_publica
 {
     public class GenerarLlaves
     {
-        public void Calculos(ref int p,ref int q)
+        public void Calculos( int p, int q)
         {
             int n = p * q;
             int phi = (p - 1) * (q - 1);
@@ -40,7 +40,7 @@ namespace Cifrado_llave_publica
             string zipPath = path+".zip";
             ZipFile.CreateFromDirectory(startPath, zipPath);
 
-
+            
 
         }
 
