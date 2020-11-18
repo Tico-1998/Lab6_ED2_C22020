@@ -7,9 +7,11 @@ namespace Consola
     {
         static void Main(string[] args)
         {
+            GenerarLlaves generar = new GenerarLlaves();
+            generar.Calculos(51, 63);
             string path = Console.ReadLine();            
             RSA rsa = new RSA(path,path);
-            rsa.cifrarodescifrar(3233, 2753,".txt", "intento");
+            rsa.cifrarodescifrar(3233, 17,".txt", "intento");
 
         }
     }

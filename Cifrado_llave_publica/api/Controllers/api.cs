@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -10,24 +11,34 @@ using Cifrado_llave_publica;
 
 namespace api.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api")]
     [ApiController]
-    public class api : ControllerBase
+    public class api : ControllerBase//revisar API
     {
+        int n = 0;
+        int f = 0;
         [HttpPost("rsa/{nombre}")]
-        public ActionResult rsa([FromForm] IFormFile file, [FromForm]IFormFile llaves, string nombre)
+        public ActionResult rsa([FromForm] IFormFile file, string nombre)
         {
             var pathactual = Environment.CurrentDirectory;
             Directory.CreateDirectory(pathactual + "\\temporal\\");
             ArchivoARuta(file);
-            var ruta = pathactual + "\\temporal\\" + nombre;
+            var ruta = pathactual + "\\temporal\\" + file.FileName;
             var server = pathactual + "\\resultado\\";
             RSA rSA = new RSA( ruta, server);
             var extencion = Path.GetExtension(file.FileName);
-            //obtener claves
-            int n = 0;
-            int e = 0;
-            rSA.cifrarodescifrar(n, e, extencion, nombre);
+            var patharchivos = pathactual + "\\clave\\";
+            if (extencion==".rsa")
+            {
+
+                Obtenerclaves(patharchivos + "private.key");               
+            }
+            else
+            {
+
+                Obtenerclaves(patharchivos + "public.key");
+            }
+            rSA.cifrarodescifrar(n, f, extencion, nombre);
             return Ok();
         }
         [HttpGet("rsa/keys/{p}/{q}")]
@@ -39,9 +50,11 @@ namespace api.Controllers
             var server = pathactual + "\\resultado\\";
             GenerarLlaves generarLlaves = new GenerarLlaves();
             generarLlaves.Calculos(p, q);
-            return Ok();//revisar return
+            return Ok();//revisar return //retornar archivo 
         }
-        public static void ArchivoARuta(IFormFile Archivo)
+
+
+        private static void ArchivoARuta(IFormFile Archivo)
         {
             var resultado = new StringBuilder();
             using (var reader = new StreamReader(Archivo.OpenReadStream()))
@@ -55,5 +68,22 @@ namespace api.Controllers
                 file.Write(resultado);
             }
         }
-    }
+        private void Obtenerclaves( string nombre)
+        {
+            using (StreamReader sr = new StreamReader(nombre))
+            {
+                var datos = sr.ReadToEnd();
+                string[] separando = datos.Split(',');
+                separando[0] = separando[0].Trim();
+                separando[1] = separando[1].Trim();
+                n = Convert.ToInt32(separando[0]);
+                f = Convert.ToInt32(separando[1]);
+                
+            }
+            
+               
+                    
+                           
+        }
+    }    
 }

@@ -22,7 +22,7 @@ namespace Cifrado_llave_publica
         }
         public void cifrarodescifrar(int n, int e, string extension, string nombre)
         {
-            if (extension==".txt")
+            if (extension == ".txt")
             {
                 extensionfinal = ".rsa";
             }
@@ -32,7 +32,7 @@ namespace Cifrado_llave_publica
             }
             var buffer = new char[largobuffer];
             var bufferescritura = new char[largobuffer];
-            using (var file=new FileStream(rutaarchivo,FileMode.Open))
+            using (var file = new FileStream(rutaarchivo, FileMode.Open))
             {
                 using (var reader = new StreamReader(file))
                 {                    

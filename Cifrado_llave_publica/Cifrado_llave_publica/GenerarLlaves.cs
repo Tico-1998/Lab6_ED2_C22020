@@ -15,6 +15,10 @@ namespace Cifrado_llave_publica
             int phi = (p - 1) * (q - 1);
             int e = ElegirE(phi);
             int d = EncontrarD(e, phi);
+            if (e==d)//rev
+            {
+                e = e * n;
+            }
             string path = Environment.CurrentDirectory;
             path = path + "\\clave";
             if (!Directory.Exists(path))
