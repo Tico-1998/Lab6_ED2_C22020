@@ -38,14 +38,7 @@ namespace api.Controllers
 
                 Obtenerclaves(patharchivos + "public.key");
             }
-            if (extencion == ".rsa")
-            {
-                rSA.Descifrar(f, n, nombre);                               
-            }
-            else
-            {
-                rSA.cifrar(n, f, nombre);
-            }
+            rSA.cifrarodescifrar(n, f, extencion, nombre);
             return Ok();
         }
         [HttpGet("rsa/keys/{p}/{q}")]
