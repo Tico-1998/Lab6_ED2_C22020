@@ -8,5 +8,9 @@
     <ProjectReference Include="..\Cifrado_llave_publica\Cifrado_llave_publica.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="resultado\" />
+  </ItemGroup>
+
 
 </Project>
