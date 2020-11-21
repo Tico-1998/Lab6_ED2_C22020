@@ -9,9 +9,9 @@ namespace Consola
         {
             GenerarLlaves generar = new GenerarLlaves();
             generar.Calculos(51, 63);
-            string path = Console.ReadLine();            
-            RSA rsa = new RSA(path,path);
-            rsa.cifrarodescifrar(3233, 17,".txt", "intento");
+            string path = Console.ReadLine();
+            RSA rsa = new RSA(path, path);
+            rsa.cifrar (3233, 17, "intento");
 
         }
     }

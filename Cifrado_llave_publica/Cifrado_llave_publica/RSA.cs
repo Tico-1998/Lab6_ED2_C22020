@@ -20,21 +20,14 @@ namespace Cifrado_llave_publica
             rutaserver = rutaServer;
             posicionbuffer = 0;
         }
-        public void cifrarodescifrar(int n, int e, string extension, string nombre)
+        public void cifrar(int n, int e, string nombre)
         {
-            if (extension == ".txt")
-            {
-                extensionfinal = ".rsa";
-            }
-            else
-            {
-                extensionfinal = ".txt";
-            }
+            
             var buffer = new char[largobuffer];
             var bufferescritura = new char[largobuffer];
             using (var file = new FileStream(rutaarchivo, FileMode.Open))
             {
-                using (var reader = new StreamReader(file))
+                using (var reader = new BinaryReader(file))
                 {                    
                     while (reader.BaseStream.Position!=reader.BaseStream.Length)
                     {                        
@@ -45,10 +38,14 @@ namespace Cifrado_llave_publica
                             var caracterByte = (int)caracter;
                             var caractercifrado = BigInteger.ModPow(caracter, e, n);
                             bufferescritura[posicionbuffer] = (char)caractercifrado;
+                            //cuantos bytes cabe n
                             posicionbuffer++;
                         }
+                        nombre = nombre + ".txt";
+                        //primera vez cuantos bytes 
                         Escribir(bufferescritura, nombre);
                     }
+                    
                 }
             }
         }
@@ -56,7 +53,7 @@ namespace Cifrado_llave_publica
         {
             using (var file = new FileStream(rutaserver + nombre+extensionfinal, FileMode.Append))//probar extension
             {
-                using (var writer = new StreamWriter(file))
+                using (var writer = new BinaryWriter(file))
                 {
                     for (int i = 0; i < bufferescritura.Length; i++)
                     {
@@ -65,25 +62,31 @@ namespace Cifrado_llave_publica
                 }
             }
         }
-        /*public void Descifrar(int d, int n)
+        public void Descifrar(int d, int n, string nombre)
         {
+            var buffer = new char[largobuffer];
+            var bufferescritura = new char[largobuffer];
             using (var file = new FileStream(rutaarchivo, FileMode.Open))
             {
-                using (var reader=new BinaryReader(file))
+                using (var reader = new BinaryReader(file))
                 {
-                    while (reader.BaseStream.Position!=reader.BaseStream.Length)
+                    while (reader.BaseStream.Position != reader.BaseStream.Length)
                     {
-                        bufferescritura = new byte[largobuffer];
-                        bufferlectura = reader.ReadBytes(largobuffer);
+                        reader.Read(buffer, 0, largobuffer);
                         posicionbuffer = 0;
-                        for (int i = 0; i < bufferlectura.Length; i++)
+                        //primer byte agrupar en esa cantidad
+                        foreach (var caracter in buffer)
                         {
-                            bufferescritura[i] = Convert.ToByte(Math.Pow(bufferlectura[i], d) % n);
+                            var caracterByte = (int)caracter;
+                            var caractercifrado = BigInteger.ModPow(caracter, d, n);
+                            bufferescritura[posicionbuffer] = (char)caractercifrado;
+                            posicionbuffer++;
                         }
-                        Escribir();
+                        nombre = nombre + ".rsa";
+                        Escribir(bufferescritura, nombre);
                     }
                 }
             }
-        }*/
+        }
     }
 }
