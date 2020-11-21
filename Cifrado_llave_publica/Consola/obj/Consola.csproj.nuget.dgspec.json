@@ -1,25 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\voca9\\Desktop\\RSA\\Cifrado_llave_publica\\Consola\\Consola.csproj": {}
+    "C:\\Users\\bluea\\OneDrive\\Escritorio\\Lab6_ED2_C22020\\Cifrado_llave_publica\\Consola\\Consola.csproj": {}
   },
   "projects": {
-    "C:\\Users\\voca9\\Desktop\\RSA\\Cifrado_llave_publica\\Cifrado_llave_publica\\Cifrado_llave_publica.csproj": {
+    "C:\\Users\\bluea\\OneDrive\\Escritorio\\Lab6_ED2_C22020\\Cifrado_llave_publica\\Cifrado_llave_publica\\Cifrado_llave_publica.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\voca9\\Desktop\\RSA\\Cifrado_llave_publica\\Cifrado_llave_publica\\Cifrado_llave_publica.csproj",
+        "projectUniqueName": "C:\\Users\\bluea\\OneDrive\\Escritorio\\Lab6_ED2_C22020\\Cifrado_llave_publica\\Cifrado_llave_publica\\Cifrado_llave_publica.csproj",
         "projectName": "Cifrado_llave_publica",
-        "projectPath": "C:\\Users\\voca9\\Desktop\\RSA\\Cifrado_llave_publica\\Cifrado_llave_publica\\Cifrado_llave_publica.csproj",
-        "packagesPath": "C:\\Users\\voca9\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\voca9\\Desktop\\RSA\\Cifrado_llave_publica\\Cifrado_llave_publica\\obj\\",
+        "projectPath": "C:\\Users\\bluea\\OneDrive\\Escritorio\\Lab6_ED2_C22020\\Cifrado_llave_publica\\Cifrado_llave_publica\\Cifrado_llave_publica.csproj",
+        "packagesPath": "C:\\Users\\bluea\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\bluea\\OneDrive\\Escritorio\\Lab6_ED2_C22020\\Cifrado_llave_publica\\Cifrado_llave_publica\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\voca9\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\bluea\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -62,26 +61,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\voca9\\Desktop\\RSA\\Cifrado_llave_publica\\Consola\\Consola.csproj": {
+    "C:\\Users\\bluea\\OneDrive\\Escritorio\\Lab6_ED2_C22020\\Cifrado_llave_publica\\Consola\\Consola.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\voca9\\Desktop\\RSA\\Cifrado_llave_publica\\Consola\\Consola.csproj",
+        "projectUniqueName": "C:\\Users\\bluea\\OneDrive\\Escritorio\\Lab6_ED2_C22020\\Cifrado_llave_publica\\Consola\\Consola.csproj",
         "projectName": "Consola",
-        "projectPath": "C:\\Users\\voca9\\Desktop\\RSA\\Cifrado_llave_publica\\Consola\\Consola.csproj",
-        "packagesPath": "C:\\Users\\voca9\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\voca9\\Desktop\\RSA\\Cifrado_llave_publica\\Consola\\obj\\",
+        "projectPath": "C:\\Users\\bluea\\OneDrive\\Escritorio\\Lab6_ED2_C22020\\Cifrado_llave_publica\\Consola\\Consola.csproj",
+        "packagesPath": "C:\\Users\\bluea\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\bluea\\OneDrive\\Escritorio\\Lab6_ED2_C22020\\Cifrado_llave_publica\\Consola\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\voca9\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\bluea\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -93,8 +91,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\voca9\\Desktop\\RSA\\Cifrado_llave_publica\\Cifrado_llave_publica\\Cifrado_llave_publica.csproj": {
-                "projectPath": "C:\\Users\\voca9\\Desktop\\RSA\\Cifrado_llave_publica\\Cifrado_llave_publica\\Cifrado_llave_publica.csproj"
+              "C:\\Users\\bluea\\OneDrive\\Escritorio\\Lab6_ED2_C22020\\Cifrado_llave_publica\\Cifrado_llave_publica\\Cifrado_llave_publica.csproj": {
+                "projectPath": "C:\\Users\\bluea\\OneDrive\\Escritorio\\Lab6_ED2_C22020\\Cifrado_llave_publica\\Cifrado_llave_publica\\Cifrado_llave_publica.csproj"
               }
             }
           }
@@ -122,7 +120,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

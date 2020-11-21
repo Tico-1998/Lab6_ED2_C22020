@@ -15,7 +15,7 @@ namespace Cifrado_llave_publica
             int phi = (p - 1) * (q - 1);
             int e = ElegirE(phi);
             int d = EncontrarD(e, phi);
-            if (e==d)//rev
+            if (e==d)//Rev
             {
                 e = e * n;
             }
@@ -79,7 +79,7 @@ namespace Cifrado_llave_publica
                 }
                 else
                 {
-                    //lanzar mensaje de error al encontrar e 
+                    //Mensaje de error al encontrar e 
                     buscando = false;
                 }
             }

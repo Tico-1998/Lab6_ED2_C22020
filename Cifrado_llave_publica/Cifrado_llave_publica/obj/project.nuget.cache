@@ -1,16 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "2vrN/bhDIE/tbmJ5bnWZWiPQURtd55KRHkyDHoA3dTfEwzzuG3BggpBLUr7FccQ2Ig/AVdPAL5aVHAvtLsIqZg==",
+  "dgSpecHash": "9vjWGB5vtLsAMNZJ3F9ljejoZTgzMK4w7KRj1HdIOgJrrDgiFS1YOsJNar+jqR4bvH0eOK01SZSjDOtjALqthw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\voca9\\Desktop\\RSA\\Cifrado_llave_publica\\Cifrado_llave_publica\\Cifrado_llave_publica.csproj",
+  "projectFilePath": "C:\\Users\\bluea\\OneDrive\\Escritorio\\Lab6_ED2_C22020\\Cifrado_llave_publica\\Cifrado_llave_publica\\Cifrado_llave_publica.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\voca9\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
-    "C:\\Users\\voca9\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
-    "C:\\Users\\voca9\\.nuget\\packages\\system.drawing.common\\5.0.0\\system.drawing.common.5.0.0.nupkg.sha512",
-    "C:\\Users\\voca9\\.nuget\\packages\\system.security.accesscontrol\\5.0.0\\system.security.accesscontrol.5.0.0.nupkg.sha512",
-    "C:\\Users\\voca9\\.nuget\\packages\\system.security.permissions\\5.0.0\\system.security.permissions.5.0.0.nupkg.sha512",
-    "C:\\Users\\voca9\\.nuget\\packages\\system.security.principal.windows\\5.0.0\\system.security.principal.windows.5.0.0.nupkg.sha512",
-    "C:\\Users\\voca9\\.nuget\\packages\\system.windows.extensions\\5.0.0\\system.windows.extensions.5.0.0.nupkg.sha512"
+    "C:\\Users\\bluea\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
+    "C:\\Users\\bluea\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
+    "C:\\Users\\bluea\\.nuget\\packages\\system.drawing.common\\5.0.0\\system.drawing.common.5.0.0.nupkg.sha512",
+    "C:\\Users\\bluea\\.nuget\\packages\\system.security.accesscontrol\\5.0.0\\system.security.accesscontrol.5.0.0.nupkg.sha512",
+    "C:\\Users\\bluea\\.nuget\\packages\\system.security.permissions\\5.0.0\\system.security.permissions.5.0.0.nupkg.sha512",
+    "C:\\Users\\bluea\\.nuget\\packages\\system.security.principal.windows\\5.0.0\\system.security.principal.windows.5.0.0.nupkg.sha512",
+    "C:\\Users\\bluea\\.nuget\\packages\\system.windows.extensions\\5.0.0\\system.windows.extensions.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }

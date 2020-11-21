@@ -14,7 +14,7 @@ namespace Cifrado_llave_publica
         private string rutaserver;
         private string extensionfinal;
 
-        public RSA( string rutaArchivo, string rutaServer)//probar
+        public RSA( string rutaArchivo, string rutaServer)//Prueba
         {            
             rutaarchivo = rutaArchivo;
             rutaserver = rutaServer;
@@ -54,7 +54,7 @@ namespace Cifrado_llave_publica
         }
         private void Escribir(char [] bufferescritura, string nombre) 
         {
-            using (var file = new FileStream(rutaserver + nombre+extensionfinal, FileMode.Append))//probar extension
+            using (var file = new FileStream(rutaserver + nombre+extensionfinal, FileMode.Append))//Probar extensión
             {
                 using (var writer = new StreamWriter(file))
                 {
@@ -65,25 +65,5 @@ namespace Cifrado_llave_publica
                 }
             }
         }
-        /*public void Descifrar(int d, int n)
-        {
-            using (var file = new FileStream(rutaarchivo, FileMode.Open))
-            {
-                using (var reader=new BinaryReader(file))
-                {
-                    while (reader.BaseStream.Position!=reader.BaseStream.Length)
-                    {
-                        bufferescritura = new byte[largobuffer];
-                        bufferlectura = reader.ReadBytes(largobuffer);
-                        posicionbuffer = 0;
-                        for (int i = 0; i < bufferlectura.Length; i++)
-                        {
-                            bufferescritura[i] = Convert.ToByte(Math.Pow(bufferlectura[i], d) % n);
-                        }
-                        Escribir();
-                    }
-                }
-            }
-        }*/
     }
 }
